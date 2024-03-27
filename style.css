@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Moninter';
+    src: url('Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Moniter';
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+.containeur{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+.containeur aside{
+    height: 1000px;
+    background-color: #C5C4C1;
+}
+.containeur section{
+    max-height: 1000px;
+}
+.formehaut{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    text-align: center;
+}
+.formehaut h3{
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 30px;
+}
+.formehaut p{
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 15px;
+    padding-top: 8px;
+}
+.formehaut .cercle{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}.formehaut img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#contactinfo{
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.formehaut ul{
+    list-style: none;
+}
+.formehaut ul li{
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.formebas{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    text-align: center;
+    margin-top: 56px;
+}
+.formations{
+    position: relative;
+    top: 90px;
+    text-align: center;
+}
+#formainfos{
+    margin-bottom: 30px;
+}
+.formations ul li{
+    color: white;
+    font-weight: 200;
+    font-size: 13px;
+    margin: 15px;
+    margin-left: 60px;
+    text-align: left;
+    list-style:disc;
+}
+.langues{
+    position: relative;
+    text-align: center;
+    top: 110px;
+}
+.langues ul li{
+    color: white;
+    font-weight: 200;
+    font-size: 13px;
+    margin: 15px;
+    margin-left: 60px;
+    text-align: left;
+    list-style:disc;
+}
+.apropos{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#titrepropos{
+    margin-bottom: 20px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 20px;
+}
+.apropos p{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.experiences{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#titrexp{
+    margin-bottom: 10px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 20px;
+
+}
+.experiences p{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.experiences h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.experiences span{
+    margin-left: 30px;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.experiences ul li{
+    margin-left: 70px;
+    margin-top: 8px;
+}
+#titrecompetences{
+    margin-top: 20px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 20px;
+    margin-bottom: 20px
+
+}
+.competences pre{
+    margin-top: 10px;
+    line-height: 1.3rem;
+}
+#tirerealisations{
+    margin-left: 40px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 20px;
+}
+.realisations ul li{
+    font-size: 14px;
+}
