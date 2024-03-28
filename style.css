@@ -9,7 +9,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Moniter';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold ;
 }
 
 body{
@@ -20,7 +21,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 3fr;
     margin: auto;
-    width: 80%;
+    width: 800px;
     display: flex;
     flex-wrap: wrap;
     border: 2px solid black;
@@ -74,9 +75,13 @@ body{
     color: black;
     letter-spacing: 1px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+#contactinfo span{
+    padding-right: 20px;
+    font-size: 30px;
 }
 .formehaut ul{
     list-style: none;
@@ -85,10 +90,17 @@ body{
     margin: 10px;
     font-size: 15px;
     font-weight: 200;
+    display: flex;
+    /* justify-content: space-around; */
+    margin-left: 40px;
+}
+.formehaut ul li span{
+    padding-right: 10px;
 }
 .formebas{
     width: 100%;
-    height: 500px;
+    height: 492px;
+position: relative;
     background-color: black;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -132,10 +144,14 @@ body{
 }
 #titrepropos{
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left:20px;
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 20px;
+}
+#titrepropos span{
+    font-size: 30px;
+    padding-right: 10px;
 }
 .apropos p{
     font-size: 16px;
@@ -147,11 +163,15 @@ body{
 }
 #titrexp{
     margin-bottom: 10px;
-    margin-left: 40px;
+    /* margin-left: 0px; */
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 20px;
 
+}
+#titrexp span{
+    font-size: 30px;
+    padding-right: 10px;
 }
 .experiences p{
     margin-top: 10px;
@@ -176,23 +196,31 @@ body{
 }
 #titrecompetences{
     margin-top: 20px;
-    margin-left: 40px;
+    /* margin-left: 20px; */
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 20px;
-    margin-bottom: 20px
+    /* margin-bottom: 20px */
 
+}
+#titrecompetences span{
+    padding-right: 10px;
+    font-size: 30px;
 }
 .competences pre{
     margin-top: 10px;
     line-height: 1.3rem;
 }
 #tirerealisations{
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 0;
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 20px;
+}
+#tirerealisations span{
+    padding-right: 10px;
+    font-size: 30px;
 }
 .realisations ul li{
     font-size: 14px;
