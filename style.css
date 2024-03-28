@@ -1,10 +1,11 @@
+/* N'ayyant pas la police installé sur l'ordinateur j'ai dû utilisé cette méthode pour importer la police d'écriture Inter */
 @font-face {
     font-family: 'Moninter';
     src: url('Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
+/*  Modifications aportés à l'ensemble de la page sur tous les éléments quels que soit leurs types */
 *{
     margin: 0;
     padding: 0;
@@ -12,11 +13,12 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold ;
 }
-
+/* le corps de la page j'ai choisi cette couleur pour ne pas que la couleur de ma partie droite qui est blanche ne rentre en conflit avec la couleur blache du body  */
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(20, 116, 60, 0.849);
     min-height: 100vh;
 }
+/* Modifications apportées sur le containeur en utilisant le display que j'ai partagé en deux parties l'une mésurant une fraction du containeur et les 3 autres fractions à la séconde partie */
 .containeur{
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -24,7 +26,7 @@ body{
     width: 800px;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .containeur aside{
     height: 1000px;
@@ -32,7 +34,9 @@ body{
 }
 .containeur section{
     max-height: 1000px;
+    background-color: white;
 }
+/* forme du haut avec un border radius vers le bas pour styliser le cv  */
 .formehaut{
     position: relative;
     width: 100%;
@@ -57,19 +61,19 @@ body{
     font-size: 15px;
     padding-top: 8px;
 }
+/* j'avais utilisé un cercle avant d'intégrér une image . J'ai fini par supprimer le design du cercle mais lorsque je masque le stle css du cercle la disposition de mes éléments changent, du coup je l'ai laissé  ici sinon ça ne me sert pas à grande chose */
 .formehaut .cercle{
     width: 150px;
     height: 150px;
-    background-color: white;
-    border-radius: 50%;
-    margin-top: 50px;
-    margin-left: 50px;
-    
+    background-color: rgb(209, 32, 32);
+    border-radius: 50%;    
 }.formehaut img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
 }
 #contactinfo{
     color: black;
@@ -78,6 +82,7 @@ body{
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 #contactinfo span{
     padding-right: 20px;
@@ -97,6 +102,7 @@ body{
 .formehaut ul li span{
     padding-right: 10px;
 }
+/* Ici la forme du bas que j'ai utilisé avec un border radius en haut pour le style */
 .formebas{
     width: 100%;
     height: 492px;
@@ -111,6 +117,7 @@ position: relative;
     position: relative;
     top: 90px;
     text-align: center;
+    align-items: center;
 }
 #formainfos{
     margin-bottom: 30px;
@@ -120,14 +127,17 @@ position: relative;
     font-weight: 200;
     font-size: 13px;
     margin: 15px;
-    margin-left: 60px;
-    text-align: left;
+    text-align: center;
     list-style:disc;
 }
 .langues{
     position: relative;
     text-align: center;
     top: 110px;
+}
+#infolangues span{
+    font-size: 25px;
+    padding-right: 10px;
 }
 .langues ul li{
     color: white;
@@ -224,4 +234,65 @@ position: relative;
 }
 .realisations ul li{
     font-size: 14px;
+}
+/* Pour adapter le design de mon cv à divers plateformes j'ai utilisé ces propriétés media */
+@media screen and (max-width:600px) {
+    .containeur{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    body{
+        background-color: white;
+    }
+    .contact{
+        justify-content: center;
+        text-align: center;
+    }
+    .contact #contactinfo{
+        font-size: 30px;
+    }
+    .contact ul li{
+        margin-left: 190px;
+    }
+    .formations{
+        justify-content: center;
+        text-align: center;
+    }
+    .formations #formainfos{
+        font-size: 30px;
+    }
+    .formations ul li{
+        margin-left: 190px;
+    }
+    .langues{
+        justify-content: center;
+        align-items: center;
+    }
+    .langues #infolangues{
+        font-size: 30px;
+    }
+    .langues ul li{
+        margin-left: 190px;
+    }
+    .formehaut #nomdeballa{
+        font-size: 30px;
+    }
+    .formehaut #balladev{
+        font-size: 20px;
+
+    }
+    #infolangues span{
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    #formainfos span{
+        font-size: 30px;
+        padding-right: 10px;
+    }
+    .containeur section{
+        margin-top: 30px;
+    }
 }

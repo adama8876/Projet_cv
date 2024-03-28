@@ -9,13 +9,14 @@
 </head>
 <body>
     <div class="containeur">
+        <!-- Containeur principal répartie en deux grandes parties -->
         <aside>
+            <!-- Partie gauche de mon cv, j'ai utilisé aside pour la sémantique, cette partie contient deux formes que j'ai une en haut et une à  droite -->
             <div class="formehaut">
-                <h3>Balla Coulibaly</h3>
-                <p>Développeur Web</p>
-                <div class="cercle">
+                <h3 id="nomdeballa">Balla Coulibaly</h3>
+                <p id="balladev">Développeur Web</p>
                     <img src="balla1.jpg" alt="photos de profil">
-                </div>
+                    <!-- Partie contact contenant les informations de contact -->
                 <div class="contact">
                     <h3  id="contactinfo"><span><i class="fa-solid fa-id-card"></i></span>CONTACT</h3>
                     <ul>
@@ -26,7 +27,8 @@
                 </div>
                 <div class="formebas">
                     <div class="formations">
-                        <h3 id="formainfos">FORMATIONS</h3>
+                        <!-- La partie formations résumant le cursus scolaire -->
+                        <h3 id="formainfos"><span><i class="fa-solid fa-graduation-cap"></i></span>FORMATIONS</h3>
                         <ul>
                             <li>BAC TSE (LMSSR): 18-19</li>
                             <li>DUT IT (FAST): 20-21</li>
@@ -34,7 +36,8 @@
                         </ul>
                     </div>
                     <div class="langues">
-                        <h3 id="infolangues">langues</h3>
+                        <!-- Cette partie englobe la capacité linguistique  -->
+                        <h3 id="infolangues"><span><i class="fa-solid fa-earth-africa"></i></span>langues</h3>
                         <ul>
                             <li>Français</li>
                             <li>Anglais</li>
@@ -45,11 +48,14 @@
             </div>
            
         </aside>
-        <section>
+        <!-- Partie droite du cv que j'ai nommé section qui englobe plusieurs parties -->
+        <section class="section_two">
+            <!-- Cette partie résume la personnalité de l'interessé -->
             <div class="apropos">
                 <h3 id="titrepropos"><span><i class="fa-solid fa-user"></i></span>à propos</h3>
                 <p>Développeur web passionné, spécialisé en frontend et <br> backend. Expérience solide dans les applications web. <br> Collaboration aisée en équipe.. Prêt à relever de <br> nouveaux défis et à contribuer à des projets web innovants.</p>
             </div>
+            <!-- Resumé de l'experiences professionnelles  -->
             <div class="experiences">
                 <h3 id="titrexp"><span><i class="fa-solid fa-briefcase"></i></span>experiences</h3>
                <pre> <h4>Stagiaire Développeur web       <span>Nov 2023-Février 2024</span></h4></pre>
@@ -68,6 +74,7 @@
                     <li>Ajout de nouveaux modules sur le site</li>
                 </ul>
                 <div class="competences">
+                    <!-- Partie compétences professionnelles  -->
                     <h3 id="titrecompetences"><span><i class="fa-solid fa-user-gear"></i></span>competences</h3>
                     <ul>
                         <li>Développement et amélioration de sites et applications web</li>
@@ -75,6 +82,7 @@
                         <li>Création d'un cahier des charges</li>
                         <li>Capacité à travailler dans divers univers web</li>
                         <li>Maîtrise des technologies suivantes:</li>
+                        <!-- Langages de programmation maitrisés -->
                         <pre>
                              -HTML/ CSS/ SASS
                              -Angular
@@ -85,6 +93,7 @@
                     </ul>
                 </div>
                 <div class="realisations">
+                    <!-- Réalisations professionnelles  -->
                     <h3 id="tirerealisations"><span><i class="fa-solid fa-trophy"></i></span>MES REALISATIONS</h3>
                   <ul>
                     <li>Conception d'un site pour une banque</li>
